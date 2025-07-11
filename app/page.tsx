@@ -3,15 +3,12 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
 import {
-  ChevronRight,
   Upload,
   Sparkles,
   BookOpen,
@@ -19,10 +16,8 @@ import {
   Image as ImageIcon,
   MessageSquare,
   ArrowRight,
-  Check,
   Menu,
   X,
-  Github,
   Twitter,
   Instagram,
   Facebook,
@@ -31,7 +26,7 @@ import {
 export default function SnapStoryLandingPage() {
   const [email, setEmail] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("stories");
+  // const [activeTab, setActiveTab] = useState("stories");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -101,50 +96,50 @@ export default function SnapStoryLandingPage() {
     },
   ];
 
-  const pricingPlans = [
-    {
-      name: "Free",
-      price: "$0",
-      period: "forever",
-      features: [
-        "5 stories per month",
-        "Basic AI generation",
-        "720p video export",
-        "Community support",
-      ],
-      cta: "Get Started",
-      popular: false,
-    },
-    {
-      name: "Pro",
-      price: "$19",
-      period: "per month",
-      features: [
-        "50 stories per month",
-        "Advanced AI generation",
-        "1080p video export",
-        "Priority support",
-        "Collaborative editing",
-      ],
-      cta: "Start Free Trial",
-      popular: true,
-    },
-    {
-      name: "Enterprise",
-      price: "Custom",
-      period: "pricing",
-      features: [
-        "Unlimited stories",
-        "Premium AI generation",
-        "4K video export",
-        "Dedicated support",
-        "API access",
-        "Custom branding",
-      ],
-      cta: "Contact Sales",
-      popular: false,
-    },
-  ];
+  // const pricingPlans = [
+  //   {
+  //     name: "Free",
+  //     price: "$0",
+  //     period: "forever",
+  //     features: [
+  //       "5 stories per month",
+  //       "Basic AI generation",
+  //       "720p video export",
+  //       "Community support",
+  //     ],
+  //     cta: "Get Started",
+  //     popular: false,
+  //   },
+  //   {
+  //     name: "Pro",
+  //     price: "$19",
+  //     period: "per month",
+  //     features: [
+  //       "50 stories per month",
+  //       "Advanced AI generation",
+  //       "1080p video export",
+  //       "Priority support",
+  //       "Collaborative editing",
+  //     ],
+  //     cta: "Start Free Trial",
+  //     popular: true,
+  //   },
+  //   {
+  //     name: "Enterprise",
+  //     price: "Custom",
+  //     period: "pricing",
+  //     features: [
+  //       "Unlimited stories",
+  //       "Premium AI generation",
+  //       "4K video export",
+  //       "Dedicated support",
+  //       "API access",
+  //       "Custom branding",
+  //     ],
+  //     cta: "Contact Sales",
+  //     popular: false,
+  //   },
+  // ];
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -568,7 +563,7 @@ export default function SnapStoryLandingPage() {
                         </div>
                       </div>
                       <p className="text-muted-foreground italic">
-                        "{testimonial.content}"
+                        &quot;{testimonial.content}&quot;
                       </p>
                     </div>
                   </CardContent>
