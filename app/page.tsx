@@ -23,7 +23,7 @@ import {
   Facebook,
 } from "lucide-react";
 
-export default function SnapStoryLandingPage() {
+export default function WonderlifeLandingPage() {
   const [email, setEmail] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const [activeTab, setActiveTab] = useState("stories");
@@ -256,62 +256,23 @@ export default function SnapStoryLandingPage() {
               <div className="rounded-md bg-muted p-1">
                 <Tabs defaultValue="stories" className="w-full">
                   <div className="flex items-center justify-between px-4 py-2">
-                    <TabsList className="grid w-full max-w-full grid-cols-4">
-                      <TabsTrigger value="stories">Stories</TabsTrigger>
-                      <TabsTrigger value="videos">Videos</TabsTrigger>
-                      <TabsTrigger value="education">Education</TabsTrigger>
-                      <TabsTrigger value="test">Test</TabsTrigger>
+                    <TabsList className="grid w-full max-w-full grid-cols-6">
+                      <TabsTrigger value="project1">Lá Chắn</TabsTrigger>
+                      <TabsTrigger value="project2">
+                        Sinh nhật Cổ Động
+                      </TabsTrigger>
+                      <TabsTrigger value="project3">La French Tech</TabsTrigger>
+                      <TabsTrigger value="project4">The Felix</TabsTrigger>
+                      <TabsTrigger value="project5">WEB3</TabsTrigger>
+                      <TabsTrigger value="project6">ECV</TabsTrigger>
                     </TabsList>
                   </div>
-                  <TabsContent value="stories" className="p-4">
+                  <TabsContent value="project1" className="p-4">
                     <div className="flex flex-col md:flex-row gap-8 items-center">
-                      <div className="flex-1 space-y-4">
-                        <div className="flex gap-4 items-center">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                            <Upload className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-sm font-medium">
-                              Upload your photos
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Start by uploading the images you want to include
-                              in your story
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex gap-4 items-center">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                            <Sparkles className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-sm font-medium">
-                              AI generates your story
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Our AI analyzes your images and creates a
-                              compelling narrative
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex gap-4 items-center">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                            <BookOpen className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-sm font-medium">
-                              Edit and publish
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Customize your story and share it with the world
-                            </p>
-                          </div>
-                        </div>
-                      </div>
                       <div className="flex-1">
                         <div className="rounded-lg overflow-hidden border shadow-sm">
                           <img
-                            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            src="/project1.jpg"
                             alt="AI Story Generation"
                             className="w-full h-auto object-cover aspect-video"
                           />
@@ -319,56 +280,12 @@ export default function SnapStoryLandingPage() {
                       </div>
                     </div>
                   </TabsContent>
-                  <TabsContent value="videos" className="p-4">
+                  <TabsContent value="project2" className="p-4">
                     <div className="flex flex-col md:flex-row gap-8 items-center">
-                      <div className="flex-1 space-y-4">
-                        <div className="flex gap-4 items-center">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                            <BookOpen className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-sm font-medium">
-                              Create your story
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Start with a written story or generate one from
-                              your images
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex gap-4 items-center">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                            <Sparkles className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-sm font-medium">
-                              AI transforms to video
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Our AI converts your story into a dynamic video
-                              presentation
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex gap-4 items-center">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                            <Video className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-sm font-medium">
-                              Share and engage
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Download your video or share directly to social
-                              platforms
-                            </p>
-                          </div>
-                        </div>
-                      </div>
                       <div className="flex-1">
                         <div className="rounded-lg overflow-hidden border shadow-sm">
                           <img
-                            src="https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            src="/project2.jpg"
                             alt="Video Creation"
                             className="w-full h-auto object-cover aspect-video"
                           />
@@ -376,55 +293,51 @@ export default function SnapStoryLandingPage() {
                       </div>
                     </div>
                   </TabsContent>
-                  <TabsContent value="education" className="p-4">
+                  <TabsContent value="project3" className="p-4">
                     <div className="flex flex-col md:flex-row gap-8 items-center">
-                      <div className="flex-1 space-y-4">
-                        <div className="flex gap-4 items-center">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                            <Upload className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-sm font-medium">
-                              Choose your topic
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Select an educational subject or upload your
-                              curriculum
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex gap-4 items-center">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                            <Sparkles className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-sm font-medium">
-                              AI creates learning materials
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Our AI generates engaging educational content and
-                              stories
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex gap-4 items-center">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                            <BookOpen className="h-5 w-5 text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-sm font-medium">
-                              Engage students
-                            </h3>
-                            <p className="text-sm text-muted-foreground">
-                              Share interactive stories that make learning fun
-                            </p>
-                          </div>
-                        </div>
-                      </div>
                       <div className="flex-1">
                         <div className="rounded-lg overflow-hidden border shadow-sm">
                           <img
-                            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            src="/project3.jpg"
+                            alt="Educational Content"
+                            className="w-full h-auto object-cover aspect-video"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </TabsContent>
+                  <TabsContent value="project4" className="p-4">
+                    <div className="flex flex-col md:flex-row gap-8 items-center">
+                      <div className="flex-1">
+                        <div className="rounded-lg overflow-hidden border shadow-sm">
+                          <img
+                            src="/project4.jpg"
+                            alt="Educational Content"
+                            className="w-full h-auto object-cover aspect-video"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </TabsContent>
+                  <TabsContent value="project5" className="p-4">
+                    <div className="flex flex-col md:flex-row gap-8 items-center">
+                      <div className="flex-1">
+                        <div className="rounded-lg overflow-hidden border shadow-sm">
+                          <img
+                            src="/project5.jpg"
+                            alt="Educational Content"
+                            className="w-full h-auto object-cover aspect-video"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </TabsContent>
+                  <TabsContent value="project6" className="p-4">
+                    <div className="flex flex-col md:flex-row gap-8 items-center">
+                      <div className="flex-1">
+                        <div className="rounded-lg overflow-hidden border shadow-sm">
+                          <img
+                            src="/project6.jpg"
                             alt="Educational Content"
                             className="w-full h-auto object-cover aspect-video"
                           />
